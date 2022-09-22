@@ -26,6 +26,6 @@ export default class Mage extends Archetype {
   }
 }
 
-const a = new Mage('maguinho', 1, 1, 'mana');
+// const a = new Mage('maguinho', 1, 1, 'mana');
 
-console.log(a.name);
+// console.log(a.name);
