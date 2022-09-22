@@ -1,7 +1,5 @@
 export default abstract class Race {
-  private static quantidade = 0;
   constructor(private _name: string, private _dexterity: number) {
-    Race.addEmployee();
   }
   
   public get name(): string {
@@ -10,10 +8,6 @@ export default abstract class Race {
 
   public get dexterity(): number {
     return this._dexterity;
-  }
-
-  private static addEmployee() {
-    this.quantidade += 1;
   }
 
   static createdRacesInstances(): number {
