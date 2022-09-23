@@ -1,10 +1,10 @@
-import Fighter from './Fighter';
+import Fighter, { SimpleFighter } from './Fighter';
 import Energy from './Energy';
 import Archetype, { Mage } from './Archetypes';
 import Race, { Elf } from './Races';
 import getRandomInt from './utils';
 
-export default class Character implements Fighter {
+export default class Character implements SimpleFighter {
   private Race: Race;
   private Archetype: Archetype;
   private MaxLifePoints: number;
@@ -55,12 +55,17 @@ export default class Character implements Fighter {
 
   receiveDamage(attackPoints: number): number {
     const damage = attackPoints - this.Defense;
-    if (damage > this.lifePoints) {
-      return -1;
-    } return this.LifePoints;
+    if (damage > 0) {
+      this.LifePoints -= damage;
+    }
+    if (this.LifePoints <= 0) {
+      this.LifePoints = -1;
+    }
+
+    return this.LifePoints;
   }
 
-  attack(target: Fighter): void {
+  attack(target: SimpleFighter): void {
     const attackPoints = this.Strength;
     target.receiveDamage(attackPoints);
   }
@@ -81,12 +86,6 @@ export default class Character implements Fighter {
     const attackPoints = this.Strength + 10;
     if (enemy) {
       enemy.receiveDamage(attackPoints);
-    } else {
-      console.log('Você sai voando');
     }
   }
 }
-
-const teste = new Character('Xablau');
-
-console.log(teste.special());
