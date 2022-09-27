@@ -14,7 +14,7 @@ player1.levelUp();
 export const monster1 = new Monster();
 export const monster2 = new Dragon();
 
-export const pvp = new PVP(player1, player3);
+export const pvp = new PVP(player2, player3);
 
 export const pve = new PVE(player1, [monster1, monster2]);
 
