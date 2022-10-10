@@ -1,16 +1,18 @@
-# 🚧 README em construção 🚧
+<h1 align="center">
+Projeto de Estudo de Programação Orientada a Objetos (POO)
+</h1>
 
-<!-- Olá, Tryber!
+## :books: Contexto
+Esse projeto foi um estudo sobre POO, onde eu utilizei TypeScript com classes com o conceito de *SOLID*
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
 
-É essencial que você preencha esse documento por conta própria, ok?
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
-
--->
+## :man_technologist: Tecnologias, bibliotecas e arquiteturas usadas
+  * __TypeScript__
+  * __Classe__
+  * __Objeto__
+  * __Instância__
+  * __Atributo__
+  * __Método__
+  * __Abstração__
+  * __Encapsulamento__
